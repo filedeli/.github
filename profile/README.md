@@ -1,12 +1,28 @@
-## Hi there 👋
+# FileDeli
 
-<!--
+Secure peer-to-peer file transfer with end-to-end encryption, inspired by Wormhole.app.
 
-**Here are some ideas to get you started:**
+## What is FileDeli?
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+FileDeli enables direct browser-to-browser file transfers using WebRTC. Files are encrypted client-side and never touch our servers - they go straight from sender to receiver.
+
+## Key Features
+
+- **P2P Transfer** - Direct connection between browsers
+- **End-to-End Encrypted** - Files encrypted using RFC 8188 streaming encryption
+- **No Signup** - Just create a link and share
+- **Real-time Progress** - See transfer speed and progress live
+
+## Tech Stack
+
+**Frontend:** React, TypeScript, WebRTC, wormhole-crypto  
+**Backend:** Bun, Elysia, PostgreSQL, Redis, coturn
+
+## How It Works
+
+1. Sender creates room and uploads file
+2. Receiver opens link
+3. WebRTC connects directly between browsers
+4. Encrypted file chunks stream peer-to-peer
+
+**Live:** https://filedeli.com
